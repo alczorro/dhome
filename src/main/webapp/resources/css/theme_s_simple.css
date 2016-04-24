@@ -1,0 +1,104 @@
+/*
+VERSION:	dHome 1.0
+AUTHOR:		Vera. zhangshixiang@cnic.cn / shivera2004@163.com
+DATE:		August, 2012
+*/
+.dHome-body.simple {background:url(../images/simple_bg.png) #dee2e6;}
+.resume-skin {border:1px solid #e5e5e5; margin-top:1.5em; width:980px;}
+.resume-skin .personal-info { 
+	padding:0em 2em; margin-top:-10px; 
+	font-family:Georgia,​serif;
+}
+.resume-skin .salutation {display:inline-block; font-size:16px;}
+.resume-skin #mainSpan {padding:0.5em 2em;}
+.resume-skin .page-container p{padding-left:5px;}
+.resume-skin .page-container,.resume-skin .edit-mode {padding:0;}
+.resume-skin .page-header h3{
+	margin:-15px 1em 0 0em; background:#fff; display:inline-block; padding-right:1em;
+	font-size:16px;color:#214B6A;
+}
+.resume-skin .d-mwhole { padding:0.8em 2em 0.5em;}
+.resume-skin .d-mwhole .top_bg {background:#9fcad6; color:#fff;font-weight:bold; font-family:"微软雅黑"; display:block; margin:10px 0; padding:10px 30px;}
+.resume-skin .d-mwhole .top_b {display:block; margin-left:32px;}
+.resume-skin .page-header {border-bottom:1px solid #ccc; margin-top:5px;height:10px; padding:0;}
+
+.resume-skin .personal-info .info-header .header-container {
+	margin:0; float:left;
+	border:0; width:200px; height:200px;line-height:195px;
+}
+.resume-skin .personal-info .info-header .header-container .header-img {
+	width:200px; height:200px; border:0; 
+}
+.resume-skin .personal-info .info-header .name-show {
+	padding:0; margin-top:3em; margin-bottom:1.5em;
+	text-align:left;  background:#eef;
+}
+.resume-skin .personal-info .info-header .name-show .resume-info {
+	float:left; line-height:1.5em;
+	width:70%; margin-left:1em;
+}
+.resume-skin .personal-info .info-header .name-show .resume-info p,
+.resume-skin .personal-info .info-header .name-show .resume-info h2 {width:100%;}
+.resume-skin .personal-info .info-header .name-show h2 {
+	color:#214B6A; float:left;
+}
+.resume-skin .personal-info .info-header .name-show p {
+	font:normal 16px "楷体";
+	font-family:Georgia,​serif,"楷体"; 
+}
+.resume-skin .personal-info .info-header .email {
+	font-size:14px; padding-left:2em; color:#999;
+	width:30%; float:right;
+}
+.resume-skin .personal-info .info-container {}
+.resume-skin .personal-info .info-container .info {font-size:14px; line-height:1.4em;}
+.resume-skin .personal-info .info-container .info .info-left {
+	width:50%; float:left; padding:0 0.5em 1.5em;
+	text-align:right; 
+}
+.resume-skin .personal-info .info-container .info .info-right {
+	width:45%; float:right; padding:0 0.5em 0.5em;
+	text-align:left; 
+}
+
+.resume-skin .personal-info .info-container .info .info-year {
+	font-size:14px; color:#666;
+}
+.resume-skin .personal-info .self-intro {
+	font-size:18px; padding:0 2em; color:#666; width:60%;
+	text-align:left; float:left;
+	margin-top:0em; margin-bottom:0.5em;
+	text-align:left;
+	font-family:Georgia,​serif,"楷体";
+}
+
+.resume-skin .info-more {
+	background:#f5f5f5; color:#999;
+	border:3px dashed #ccc; 
+	width:auto; display:block;
+	text-align:center; padding:2em;
+	font:bold 18px "微软雅黑";
+}
+
+/* LeftMenu */
+.resume-skin .left-menu {font-size:14px; line-height:2em;}
+.resume-skin .left-menu ul#sortableMenu {
+	margin-left:10px; padding-right:4em; 
+	border-right:none; font-weight:bold;
+}
+.resume-skin .left-menu ul#sortableMenu li {text-align:right;}
+.resume-skin .left-menu ul#sortableMenu li a {color:#666; background:transparent;}
+.resume-skin .tabs-left > .nav-tabs > li > a, .resume-skin .tabs-left > .nav-tabs > li > a:hover {border:none;}
+.resume-skin .tabs-left > .nav-tabs .active > a, .resume-skin .tabs-left > .nav-tabs .active > a:hover {
+	font-weight:bold; 
+	border-radius:0;
+	border:none;
+	background:transparent;
+}
+.resume-skin .tabs-left > .nav-tabs .active > a span, .resume-skin .tabs-left > .nav-tabs .active > a:hover span {
+	border-bottom:3px solid #0074CC;
+	padding:0px 0 5px 5px;
+	color:#0074CC;
+}
+.resume-skin .updateTime {padding-left:2.2em;}
+.resume-skin .personal-info .info-header .name-show .resume-info p.mediaLinks {width:auto; line-height:2em;}

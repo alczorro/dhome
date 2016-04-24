@@ -1,0 +1,7 @@
+	<p>${userName}创建了学术主页，信息如下：</p>
+    <p>用户: ${userName}</p>
+    <p>登录账户: ${email}</p>
+    <p>主页链接: http://www.escience.cn/people/${domain}</p>
+    <p>用户介绍: ${introduction}</p>
+    <p>
+    <a href="http://www.escience.cn/people/${domain}">查看主页</a>

@@ -1,0 +1,10 @@
+	<p>    尊敬的用户 ${userName}， 您好
+    <p>您已经在学术主页成功创建了个人主页！
+    <p>主页链接: <a href="http://www.escience.cn/people/${domain}" target="_blank">http://www.escience.cn/people/${domain}/admin</a>
+    <p>登录账户: ${email}
+    <p>学术主页旨在为科学家提供个性化的学术主页服务，是科研在线推出的科研服务之一。在这里，您可以轻松便捷的创建属于您个人的学术名片和学术空间，分享学术成果，结识更多同行。
+    <p>
+    <a href="http://www.escience.cn/people/${domain}/admin" target="_blank">马上登录学术主页！</a>
+     <div></div>
+	<p>--科研在线 学术主页
+    

@@ -1,0 +1,108 @@
+/*
+VERSION:	dHome 2.0 IAP
+AUTHOR:		Vera. zhangshixiang@cstnet.cn / shivera2004@163.com
+DATE:		April, 2015
+*/
+
+
+/*********** Page iap Skin begin*/
+body.dHome-body.iap {background:url(../images/body_iap_bg.jpg) center 0 no-repeat #b3df89;}
+.container.iap-skin {width:980px;}
+.iap-skin .row-fluid.mini-layout.center {
+	min-height:600px;
+	background:transparent;
+}
+.iap-skin .personal-info { 
+	padding:0; margin-top:0em; 
+	font-family:Georgia,serif; height:180px;
+}
+.iap-skin .salutation {display:inline-block; font-size:16px;}
+.iap-skin #mainSpan {margin-right:0; margin-top:0px; margin-left:0; padding:0;}
+.iap-skin .info {width:auto;}
+.iap-skin .iap_title {
+	background:#fff;
+	color:rgb(137,181,0);
+	text-align:left; padding:0px 15px; margin:0;
+}
+
+.iap-skin .page-header {
+	background:#fff; margin-top:0px; padding:5px 10px 0 10px; margin-bottom:0;
+	border-bottom:1px dotted rgb(186,196,149); 
+}
+.iap-skin .page-header h2,.iap-skin .page-header h3,.iap-skin .page-header h4 {
+    font-weight: normal;
+    padding: 5px 0px; color:#666; font-weight:bold;
+}
+.iap-skin .page-container {padding:0.5em 1em; min-height:400px; position:relative;}
+.iap-skin .pages { background:#fff; margin-top:10px; text-align:left;border:1px solid #8fb769;}
+.iap-skin .pages a {padding:0; border:none;}
+.iap-skin h3.iap_title a.edit-personal{ 
+ 	font:normal 13px "宋体"; float:right; margin:0; 
+ 	text-decoration:none; color:#666; padding:3px 0; text-shadow:none;
+ 	margin-top:13px;
+}
+.iap-skin h3.iap_title a.edit-personal:hover {background:#eef;}
+.iap-skin .page-header h4 a.edit-personal,.iap-skin .page-header h2 a.edit-personal {
+	top:30px; text-shadow:none;
+	border:none;background:transparent;border-radius:0;
+	position:static; display:inline-block; float:right;
+}
+.iap-skin .page-header h4 a.edit-personal {top:20px;}
+.iap-skin .header {float:none;width:auto;}
+.iap-skin .header-edit a {top:-33px; right:66px; line-height:1.5em; border-radius:10px;}
+.iap-skin .header-container {
+	float:left; border:none; margin:10px 0 0 0; height:auto;
+	width:100%; background:#fff; text-align:center; border:1px solid #8fb769;
+}
+.iap-skin .header-img {
+	padding:0px; background:#fff; border:0; 
+	margin:13px auto; width:200px; height:200px; line-height:195px;
+}
+.iap-skin .header-img > img {border-radius:200px;}
+.iap-skin .header-container p {
+	color:#6D6D6D; text-align:left;
+	padding:1em; line-height:1.7em; font-size:14px; margin-bottom:0;
+}
+.iap-skin .header-container p.mediaLinks{
+	padding:0 1em 1em; line-height:1.4em;
+}
+.iap-skin .header-container p.mediaLinks a {margin-right:-10px;}
+.iap-skin .self-intro {
+	display:block;
+	border-top:1px solid #fff; margin-top:10px; padding-top:10px;
+}
+
+.iap-skin .info-more {
+	background:#f5f5f5; color:#999;
+	border:3px dashed #ccc; 
+	width:auto; display:block;
+	text-align:center; padding:2em;
+	font:bold 18px "微软雅黑";
+}
+
+/* LeftMenu */
+.iap-skin .tabbable.tabs-left.span12 {padding:0; margin:0;}
+.iap-skin .left-menu ul {
+	margin:20px 0 0 0; padding:0;
+	border-right:none; 
+	background:#fff; width:100%; 
+	border:1px solid #8fb769;
+}
+.iap-skin .left-menu ul li {
+	border-bottom: 1px dotted #8fb769;
+    padding:0; margin:0;
+}
+.iap-skin .left-menu ul li a {
+	color:#666; border:none;
+	display:block; border-radius:0; 
+}
+.iap-skin .left-menu ul li.active a {font-weight:bold; background:#afca95; color:#fff;}
+.iap-skin .left-menu ul li a:hover,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover {
+ 	background:#afca95;  color:#fff
+}
+.iap-skin .tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {margin:0; padding:15px 1em;}
+.iap .footer {color:#eee;}
+.iap-skin .updateTime {color:#fff; margin-top:0; padding:1em;}
+/*********** Page iap Skin end*/
+

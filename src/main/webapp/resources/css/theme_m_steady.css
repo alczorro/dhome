@@ -1,0 +1,111 @@
+/*
+VERSION:	dHome 1.0
+AUTHOR:		Vera. zhangshixiang@cnic.cn / shivera2004@163.com
+DATE:		Oct, 2012
+*/
+
+
+/*********** Page steady Skin begin*/
+body.dHome-body.steady {background:#4c4c4c;}
+.container.steady-skin {width:980px;}
+.steady-skin .row-fluid.mini-layout.center {
+	min-height:600px;
+	background:transparent;
+}
+.steady-skin .personal-info { 
+	padding:0; margin-top:0em; 
+	font-family:Georgia,serif; height:180px;
+}
+.steady-skin .salutation {display:inline-block; font-size:16px;}
+.steady-skin #mainSpan {margin-right:0; margin-top:0px; margin-left:0; padding:0;}
+.steady-skin .info {width:auto;}
+.steady-skin .steady_title {
+	background:#e4e8e9;
+	color: #A8AFB0;
+	text-shadow: 0 -1px #787878,0 1px white;
+	-moz-transition: color 400ms ease-out 0s;
+	-webkit-transition: color 400ms ease-out 0s;
+	transition: color 400ms ease-out 0s;
+	text-align:left; padding:0px 15px; margin:0;
+}
+
+.steady-skin .page-header {
+	background:#D2D6D7; margin-top:10px; padding:5px 10px 0 10px; margin-bottom:0;
+}
+.steady-skin .page-header h2,.steady-skin .page-header h3,.steady-skin .page-header h4 {
+    font-weight: normal;
+    padding: 5px 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.steady-skin .page-container {padding:0.5em 1em; min-height:400px; position:relative;}
+.steady-skin .pages { background:#E4E8E9;}
+.steady-skin h3.steady_title a.edit-personal{ 
+ 	font:normal 13px "宋体"; float:right; margin:0; 
+ 	text-decoration:none; color:#666; padding:3px 0; text-shadow:none;
+}
+.steady-skin h3.steady_title a.edit-personal:hover {background:#eef;}
+.steady-skin .page-header h4 a.edit-personal,.steady-skin .page-header h2 a.edit-personal {
+	top:30px; text-shadow:none;
+	border:none;background:transparent;border-radius:0;
+	position:static; display:inline-block; float:right;
+}
+.steady-skin .page-header h4 a.edit-personal {top:20px;}
+.steady-skin .header {float:none;width:auto;}
+.steady-skin .header-edit a {top:-33px; right:13px; line-height:1.5em;}
+.steady-skin .header-container {
+	float:left; border:none; margin:10px 0 0 0; height:auto;
+	width:100%; background:#e8e8e8; text-align:center;
+}
+.steady-skin .header-img {
+	padding:0px; background:#fff; border:0; 
+	margin:13px auto; width:200px; height:200px; line-height:195px;
+}
+.steady-skin .header-container p {
+	color:#6D6D6D; text-align:left;
+	padding:1em; line-height:1.7em; font:normal 16px "楷体"; margin-bottom:0;
+}
+.steady-skin .header-container p.mediaLinks{
+	padding:0 1em 1em; line-height:1.4em;
+}
+.steady-skin .header-container p.mediaLinks a {margin-right:-10px;}
+.steady-skin .self-intro {
+	display:block;
+	border-top:1px solid #fff; margin-top:10px; padding-top:10px;
+}
+
+.steady-skin .info-more {
+	background:#f5f5f5; color:#999;
+	border:3px dashed #ccc; 
+	width:auto; display:block;
+	text-align:center; padding:2em;
+	font:bold 18px "微软雅黑";
+}
+
+/* LeftMenu */
+.steady-skin .tabbable.tabs-left.span12 {padding:0; margin:0;}
+.steady-skin .left-menu ul {
+	margin:20px 0 0 0; padding:0;
+	border-right:none; 
+	background:#e8e8e8; width:100%; 
+}
+.steady-skin .left-menu ul li {
+	border-bottom: 1px solid #C4C8C7;
+    border-top: 1px solid #FFFFFF;
+    padding:0; margin:0;
+}
+.steady-skin .left-menu ul li a {
+	color:#666; border:none;
+	display:block; border-radius:0; 
+}
+.steady-skin .left-menu ul li.active a {font-weight:bold; }
+.steady-skin .left-menu ul li a:hover {
+ 	background:#abeced; 
+}
+.steady-skin .tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {margin:0; padding:15px 1em;}
+.steady .footer {color:#eee;}
+.steady-skin .updateTime {background:#E4E8E9; margin-top:0; padding:1em;}
+.steady .dface.footer ul.simple-footer-nav li a,
+ 	.steady .dface.footer p,
+ 	.steady .dface.footer p a {color:#aaa;}
+/*********** Page steady Skin end*/
+

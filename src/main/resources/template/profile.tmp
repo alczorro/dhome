@@ -1,0 +1,10 @@
+个人经历:
+<br>教育经历：
+<for items="${edus}">
+	<p>${aliasInstitutionName }，${degree }，${department }</p>
+</for>
+工作经历：
+<for items="${works}">
+	<p>${aliasInstitutionName }，${department }，${position }</p>
+</for>
+<br>

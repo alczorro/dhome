@@ -1,0 +1,84 @@
+
+
+host = http://localhost/dhome
+
+${host}/people/{user-domain}/isUrlUsed.html => isUrlUsed
+${host}/people/{user-domain}}/admin/p/{pageName} => showAdminPage
+${host}/people/{domain}/{pageName}.html => browse page name
+${host}/people/{domain}/admin/p/newPage => newPage
+${host}/people/{domain}/admin/p/addPage => addPage 提交并保存
+${host}/people/{domain}/admin/{pageName}.html?func=remove => 
+
+yangxiaopeng@cnic.cn
+${host}/login [func=forgetPsw | /isLogin.json]
+${host}/discover [/all.json | /latest.json | /four.json | /discipline.json | /search.json]
+${host}/logout
+${host}/system/searchPaper/paper.json 
+${host}/system/download/{clbId}
+${host}/people/{domain}/paper.dhome
+${host}/people/{domain}/admin/paper [ /getPapers.json | /deletePaper.json | /reorder.json | /changeStatus | /afterUpload.json ]
+${host}/people/{domain}/admin/paper/edit [func=save | func=paperSearch | func=saveSearchPaper | func=importBibtex | func=uploadBibtex | func=saveBibPaper | func=uploadFulltext]
+${host}/people/{domain}/admin/personal [ /baseinfo | /work | /education | /photo]
+${host}/people/{domain}/admin/personal/edit [/baseinfo?func=save | /work?func=save | /work?func=delete | /education?func=save | /education?func=delete]
+
+lvlongyun@cnic.cn
+
+QuickRegistController
+	ajax:/system/regist?func=isEmailUsed
+	ajax:/system/regist?func=isDomainUsed
+	ajax:/system/regist?func=uploadImage
+	form:/system/regist?func=stepOne
+	ajax:/system/regist?func=stepTwoLoadInstitution
+	form:/system/regist?stepTwo
+	jsp:/system/regist?func=stepThreeWork
+	jsp:/system/regist?func=stepThreeEdu
+	form:/system/regist?func=stepFour
+	ajax:/system/regist?func=cutImg
+	form:/system/regist?func=complete
+	ajax:/system/regist?func=getDisciplineChild
+
+HomeController
+	form:/people/{domain}
+	form:/people/{domian}/admin
+	
+IndexController
+	ajax:/system/index/homeCount
+
+PageController
+	ajax:/people/{domain}/isUrlUsed.html
+	form:/people/{domain}/admin/p/{pageName}?func=edit
+	form:/people/{domain}/admin/p/{pageName}
+	form:/people/{domain}/{pageName}.html
+	form:/people/{domain}/admin/p/newPage
+	form:/people/{domain}/admin/p/{pageName}/changeStatus
+	form:/people/{domain}/admin/p/{pageName}/deleteStatus
+	form:/people/{domain}/admin/p/addPage
+	ajax:/people/{domain}/admin/p/getEdus.json
+	ajax:/people/{domain}/admin/p/getWorks.json
+
+UEditorController
+	form:/system/img?imgId=xxx
+	form:/system/img?func=uploadImg
+	form:/system/img?func=manageImg
+	form:/system/file?func=uploadFile
+	form:/system/file?fileId=xxx
+	form:/system/video?func=search
+	
+	
+机构主页部分：
+
+展示页面
+	/institution/{domain}/index.html => 机构主页首页
+	/institution/{domain}/events.html => 机构主页活动列表
+	/institution/{domain}/events/{event-id}/details.html => 学术活动详细页面
+	/institution/{domain}/publications.html => 机构主页论文列表
+	/institution/{domain}/members.html => 机构主页人员列表
+	/institution/{domain}/statsitic.json => 机构主页论文数据统计
+设置部分
+	/institution/{domain}/preferences => 机构主页设置
+	
+	
+
+
+
+

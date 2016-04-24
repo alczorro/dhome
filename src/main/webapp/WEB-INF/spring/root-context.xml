@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context-3.0.xsd
+			http://www.springframework.org/schema/tx      
+    		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<context:property-placeholder location="classpath:conf/appconfig.properties"/>
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	    <property name="driverClass" value="${c3p0.driverClass}"/>
+	    <property name="jdbcUrl" value="${c3p0.url}"/>
+	    <property name="user" value="${c3p0.username}"/>
+	    <property name="password" value="${c3p0.password}"/>
+		<property name="initialPoolSize" value="${c3p0.initialPoolSize}"/>
+		<property name="maxPoolSize" value="${c3p0.maxPoolSize}"/>
+		<property name="minPoolSize" value="${c3p0.minPoolSize}"/>
+		<property name="acquireIncrement" value="${c3p0.acquireIncrement}"/>
+		<property name="maxStatements" value="${c3p0.maxStatements}"/>
+		<property name="preferredTestQuery" value="${c3p0.preferredTestQuery}"/>
+		<property name="maxConnectionAge" value="${c3p0.maxConnectionAge}"/>
+		<property name="testConnectionOnCheckout" value="${c3p0.testConnectionOnCheckout}"/>
+	</bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	<bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+		<constructor-arg>
+			<ref bean="dataSource"/>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="baseDAO" abstract="true">
+		<property name="jdbcTemplate" ref="jdbcTemplate"/>
+		<property name="namedParameterJdbcTemplate" ref="namedParameterJdbcTemplate"/>
+	</bean>
+	
+	
+	<bean id="bootstrapConfig" class="net.duckling.dhome.common.bootstrap.BootstrapConfig">
+		<property name="dbUser" value="${c3p0.username}"/>
+		<property name="dbPassword" value="${c3p0.password}"/>
+		<property name="dbName" value="${database}"/>
+		<property name="driverClass" value="${c3p0.driverClass}"/>
+		<property name="dbURL" value="${app.bootstrap.db.url}"/>
+		<property name="checkTable" value="${app.bootstrap.check.table}"/>
+		<property name="sqlDir" value="${app.bootstrap.sql.dir}"/>
+		<property name="sqlFiles" value="${app.bootstrap.sql.files}"/>
+	</bean>
+	
+	<bean id="bootstrapDao" class="net.duckling.dhome.common.bootstrap.BootstrapDao" parent="baseDAO">
+		<constructor-arg ref="bootstrapConfig"></constructor-arg>
+	</bean>
+	
+	<bean id="bootstrapService" class="net.duckling.dhome.common.bootstrap.BootstrapService">
+		<property name="bootstrapDao" ref="bootstrapDao"/>
+	</bean>
+	
+<!-- 	<bean id="cacheProvider" class="net.duckling.dhome.common.cache.MemcachedProvider" destroy-method="disconnect"> -->
+<!-- 		<constructor-arg type="java.lang.String" value="${dhome.memcached.url}"/> -->
+<!-- 	</bean> -->
+	
+	<bean id="cacheService" class="net.duckling.falcon.api.cache.impl.MemcachedCacheService" 
+			init-method="doInit" destroy-method="doDestroy">
+		<property name="memcachedURL" value="${dhome.memcached.url}"/>
+	</bean>
+	<bean id="vmtOrgService" class="net.duckling.vmt.api.impl.OrgService">
+		<constructor-arg type="java.lang.String" value="${vmt.service.url}">
+		</constructor-arg>
+	</bean>
+		<bean id="vmtUserService" class="net.duckling.vmt.api.impl.UserService">
+		<constructor-arg type="java.lang.String" value="${vmt.service.url}">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="vmtGroupService" class="net.duckling.vmt.api.impl.GroupService">
+		<constructor-arg type="java.lang.String" value="${vmt.service.url}">
+		</constructor-arg>
+	</bean>
+</beans>

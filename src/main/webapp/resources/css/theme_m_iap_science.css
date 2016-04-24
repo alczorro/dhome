@@ -1,0 +1,153 @@
+/*
+VERSION:	dHome 2.0 IAP
+AUTHOR:		Vera. zhangshixiang@cstnet.cn / shivera2004@163.com
+DATE:		April, 2015
+*/
+
+
+/*********** Page iap-science Skin begin*/
+body.dHome-body.iap_science {background:url(../images/body_iap_science_bg.jpg) center 0 no-repeat #308ca2;}
+.container.iap-science-skin {width:980px;}
+.iap-science-skin .center {margin-top:0}
+.iap-science-skin .row-fluid.mini-layout.center {
+	min-height:600px;
+	background:transparent;
+}
+.iap-science-skin .personal-info { 
+	padding:0 15px 0 0; margin-top:3em; 
+	font-family:Georgia,serif; height:210px;
+}
+.iap-science-skin .salutation {display:inline-block; font-size:16px;}
+.iap-science-skin #mainSpan {margin-right:0em; margin-top:40px; margin-left:0; padding:0 15px 0 0;}
+.iap-science-skin .info {width:auto;}
+
+.iap-science-skin .personal-info .info-header .name-show a.edit-personal:hover {background:none;}
+.iap-science-skin .page-container p {color:#B5DBDC;}
+.iap-science-skin .page-container p > a {color:#B5DBDC; text-decoration:underline}
+.iap-science-skin .page-container .paper-list.paper-list-show li,
+	.iap-science-skin .page-container .paper-list.paper-list-show li a {color:#B5DBDC}
+.iap-science-skin .page-container .paper-list li .paper-title a,
+	.iap-science-skin .page-container .paper-list li .paper-title  {color:#B5DBDC; font-weight:bold;}
+.iap-science-skin .page-container .summary.link {color:#B5DBDC}
+
+.iap-science-skin .page-header {border-bottom:2px solid #B5DBDC; margin-top:-10px; margin-bottom:0.5em; padding-bottom:0;}
+.iap-science-skin .page-header h2,.iap-science-skin .page-header h3,.iap-science-skin .page-header h4 {color:#B5DBDC;}
+.iap-science-skin .header-container {
+	float:left; border:none; margin:0;
+	text-align:right; width:200px;height:200px;
+	line-height:195px; text-align:center;border:1px solid #ccc;
+	padding:5px; border-radius:200px; background:#fff; margin-bottom:30px;
+}
+.iap-science-skin .page-header h2 a.edit-personal {position:relative; display:inline-block; float:right; margin-top:10px;}
+.iap-science-skin .header-edit a {right:48px; height:26px; border-radius:20px;}
+.personal-info .info-header .name-show a.edit-personal {margin:10px 0; color:#fff}
+.iap-science-skin .header-img {
+	background:#fff;
+	border-radius:200px;
+}
+.iap-science-skin .personal-info .info-header .name-show {
+	background:transparent;
+	padding:0; margin-top:0em;
+	text-align:left; 
+}
+.iap-science-skin .personal-info .info-header .name-show h2 {
+	color:#fff; 
+	margin-left:0; padding-top:30px;
+}
+.iap-science-skin .personal-info .info-header .name-show p {
+	font:normal 16px "楷体";
+	font-family:Arial,​serif,"楷体"; color:#fff;
+}
+.iap-science-skin .personal-info .info-header .name-show p a {color:#fff}
+.iap-science-skin .personal-info .info-header .email {
+	font-size:14px; padding-left:2em; color:#999;
+	width:30%; float:right;
+}
+.iap-science-skin .personal-info .info-container {}
+.iap-science-skin .personal-info .info-container .info {font-size:16px; line-height:1.4em;}
+.iap-science-skin .personal-info .info-container .info .info-left {
+	width:60%; float:left; padding:0 0.5em 1.5em;
+	text-align:right; 
+}
+.iap-science-skin .personal-info .info-container .info .info-right {
+	width:35%; float:right; padding:0 0.5em 0.5em;
+	text-align:left; 
+}
+
+.iap-science-skin .personal-info .info-container .info .info-year {
+	font-size:16px; color:#666;
+}
+.iap-science-skin .personal-info .self-intro {
+	font-size:18px; padding:0; color:#666; 
+	text-align:left; line-height:1.5em; float:left;
+	margin-top:1em; margin-bottom:0.5em;
+	text-align:left; width:100%;
+	font-family:Georgia,​serif,"楷体";
+}
+
+.iap-science-skin .info-more {
+	background:#f5f5f5; color:#999;
+	border:3px dashed #ccc; 
+	width:auto; display:block;
+	text-align:center; padding:2em;
+	font:bold 18px "微软雅黑";
+}
+
+/* LeftMenu */
+.iap-science-skin .left-menu {font-size:16px; line-height:2em; margin-top:5px;}
+.iap-science-skin .left-menu ul#sortableMenu {
+	margin:20px; padding-left:0; float:right;
+	border-right:none; font-weight:bold; text-align:right;
+}
+.iap-science-skin .left-menu ul#sortableMenu li {
+	background:transparent; padding:10px; margin:0;
+	width:200px; height:30px; overflow:hidden;
+}
+.iap-science-skin .left-menu ul#sortableMenu li a {
+	background:#B5DBDC; color:#666; padding:10px;
+	display:inline-block; border-radius:0; min-width:auto;margin:0;
+	height:1.7em; overflow:hidden; line-height:1.4em; float:right;
+	white-space:nowrap;
+}
+.iap-science-skin .left-menu ul#sortableMenu li.active a {background:rgb(220,166,130); color:#fff;}
+.iap-science-skin .left-menu ul#sortableMenu li a:hover {
+	padding:10px 10px 10px 100px; 
+ 	-webkit-transition: all 400ms ease-out 0s;  
+    -moz-transition: all 400ms ease-out 0s;  
+    -o-transition: all 400ms ease-out 0s;  
+    -ms-transition: all 400ms ease-out 0s;  
+    transition: all 400ms ease-out 0s;  
+ 	background:rgb(220,166,130); color:#fff;
+}
+.iap-science-skin .tabs-left > .nav-tabs > li > a, .iap-science-skin .tabs-left > .nav-tabs > li > a:hover {
+	padding:10px; text-align:right; color:#fff;
+}
+.iap-science-skin .tabs-left > .nav-tabs .active > a, .iap-science-skin .tabs-left > .nav-tabs .active > a:hover {
+	font-weight:bold; 
+	border-radius:0;
+	border:none;
+	border-left:3px solid #0074CC;
+	padding:0;
+	color:#0074CC;
+}
+.left-menu ul#sortableMenu li.active a {
+	border:none; padding:10px; margin:0;
+}
+.iap-science-skin .tabs-left > .nav-tabs li> a:hover {
+ 	padding:0 10px 0 80px;
+ 	-moz-transition:all 400ms ease-out 0s;
+ 	background:#f90;
+ }
+ .iap-science-skin ol#IAPPapers li,
+ 	.iap-science-skin ol#IAPPapers li .title,
+ 	.iap-science-skin ol#IAPPapers li a {color:#B5DBDC}
+.iap-science-skin .page-container a.small-font {color:#B5DBDC}
+.iap-science-skin .summary-content {color:#666}
+.iap-science-skin p.mediaLinks {padding:0; color:#B5DBDC}
+.iap-science-skin .updateTime {margin-top:2em; margin-bottom:0; color:#B5DBDC}
+.iap_science .dface.footer ul.simple-footer-nav li a,
+ 	.iap_science .dface.footer p,
+ 	.iap_science .dface.footer p a {color:#B5DBDC;}
+
+/*********** Page iap science Skin end*/
+

@@ -1,0 +1,9 @@
+<p>尊敬的用户 ${userName}， 您好</p>
+<p>很高兴地通知您，您的个人主页${domain}已通过审核，现在就可以访问。</p>
+<p>主页链接： http://www.escience.cn/people/${domain} </p>
+<p>管理账号： ${email} </p>
+<p>建议：${reason}</p>
+<p>希望您能通过学术主页分享学术成果，结识更多同行。</p>
+<p>如有任何问题，请与vlab@cnic.cn联系。</p>
+<p></p>
+<p>--科研在线 学术主页</p>

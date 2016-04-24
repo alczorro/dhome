@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<isi_config>
+<crawl_mainPage>
+<param name="host_name" value="isi"/>
+<param name="host_url" value="http://apps.webofknowledge.com/"/>
+<param name="advanced_url" value="http://apps.webofknowledge.com/UA_GeneralSearch.do"/>
+      <request_param name="fieldCount" value="1"/>   
+      <request_param name="action" value="search"/>   
+      <request_param name="product" value="UA"/>
+      <request_param name="search_mode" value="GeneralSearch"/>
+      <request_param name="SID" value=""/>
+      <request_param name="max_field_count" value="25"/>
+      <request_param name="value(input1)" value=""/>     
+      <request_param name="value(select1)" value="TS"/>
+      <request_param name="limitStatus" value="collapsed"/>
+      <request_param name="formUpdated" value="true"/>
+      <request_param name="max_field_count" value="25"/>
+      <request_param name="ss_query_language" value="auto"/>
+</crawl_mainPage>
+<craw_listPage>
+<param name="page_url_suffix" value = "colName=WOS&amp;formValue(summary_mode)=AdvancedSearch&amp;page="/>
+</craw_listPage>
+<fetch_fullText>
+    <source  hosturl="http://www.sciencedirect.com" linkurl="http://linkinghub.elsevier.com" name="sciencedirect"/>
+      <!-- 需要两次解析 -->
+    <source  hosturl="http://www3.interscience.wiley.com" linkurl="http://onlinelibrary.wiley.com" name="interscience"/> 
+	<source  hosturl="http://pubs.acs.org" linkurl="http://pubs.acs.org" name="acs"/> 
+    <source  hosturl="http://pubs.rsc.org" linkurl="http://xlink.rsc.org" name="rsc"/>
+    <!-- springerlink有些能下，有些不能下 -->
+    <source  hosturl="http://www.springerlink.com" linkurl="http://www.springerlink.com" name="springerlink" />
+    <source hosturl="http://www.informaworld.com/smpp" linkurl="http://www.informaworld.com/smpp" name="informationworld" />
+    <!-- JSTAGE有些能下，有些不能下 -->
+     <source hosturl="http://www.jstage.jst.go.jp" linkurl="http://joi.jlc.jst.go.jp/JST.JSTAGE" name="JSTAGE" />
+     <source hosturl="http://www.iwaponline.com" linkurl="http://www.iwaponline.com" name="iwap"/>
+     <!-- source url="http://scitation.aip.org" name = "scitation" -->
+</fetch_fullText>
+</isi_config>

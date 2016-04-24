@@ -1,0 +1,133 @@
+/*
+VERSION:	dHome 1.0
+AUTHOR:		Vera. zhangshixiang@cnic.cn / shivera2004@163.com
+DATE:		Oct, 2012
+*/
+
+
+/*********** Page trend Skin begin*/
+body.dHome-body.trend {background:url(../images/trend-bg.png);}
+.container.trend-skin {width:980px;}
+.trend-skin .row-fluid.mini-layout.center.p-top {
+	min-height:600px;
+	background:transparent;
+}
+.trend-skin .personal-info { 
+	padding:0; margin-top:0em; 
+	font-family:Georgia,serif; 
+}
+.trend-skin .salutation {display:inline-block; font-size:16px;}
+.trend-skin #mainSpan {margin-right:0em; margin-top:40px; margin-left:0; padding:0;}
+.trend-skin .info {width:auto;}
+
+.trend-skin .page-header {border-bottom:2px solid #B5DBDC; margin-top:-10px; margin-bottom:0.5em; padding-bottom:0;}
+.trend-skin .page-header h2,.trend-skin .page-header h3,.trend-skin .page-header h4 {color:#00B9BD;}
+.trend-skin .header-container {
+	float:left; border:none; margin:0;
+	text-align:right; width:200px;height:200px;
+	line-height:195px; text-align:center;border:1px solid #ccc;
+	padding:5px; border-radius:200px; background:#fff;
+}
+.trend-skin .page-header h2 a.edit-personal {position:relative; display:inline-block; float:right; margin-top:10px;}
+.trend-skin .header-edit a {right:48px; height:26px; border-radius:20px;}
+.personal-info .info-header .name-show a.edit-personal {margin:10px 0;}
+.trend-skin .header-img {
+	background:#fff;
+	border-radius:200px;
+}
+.trend-skin .personal-info .info-header .name-show {
+	background:transparent;
+	padding:0; margin-top:2em;
+	text-align:left; 
+}
+.trend-skin .personal-info .info-header .name-show h2 {
+	color:#333; text-shadow:0 -1px #E3E1E1, 0 1px #FFFFFF;
+	margin-left:0; padding-top:30px;
+}
+.trend-skin .personal-info .info-header .name-show p {
+	font:normal 16px "楷体";
+	font-family:Arial,​serif,"楷体"; 
+}
+.trend-skin .personal-info .info-header .email {
+	font-size:14px; padding-left:2em; color:#999;
+	width:30%; float:right;
+}
+.trend-skin .personal-info .info-container {}
+.trend-skin .personal-info .info-container .info {font-size:16px; line-height:1.4em;}
+.trend-skin .personal-info .info-container .info .info-left {
+	width:60%; float:left; padding:0 0.5em 1.5em;
+	text-align:right; 
+}
+.trend-skin .personal-info .info-container .info .info-right {
+	width:35%; float:right; padding:0 0.5em 0.5em;
+	text-align:left; 
+}
+
+.trend-skin .personal-info .info-container .info .info-year {
+	font-size:16px; color:#666;
+}
+.trend-skin .personal-info .self-intro {
+	font-size:18px; padding:0; color:#666; 
+	text-align:left; line-height:1.5em; float:left;
+	margin-top:1em; margin-bottom:0.5em;
+	text-align:left; width:100%;
+	font-family:Georgia,​serif,"楷体";
+}
+
+.trend-skin .info-more {
+	background:#f5f5f5; color:#999;
+	border:3px dashed #ccc; 
+	width:auto; display:block;
+	text-align:center; padding:2em;
+	font:bold 18px "微软雅黑";
+}
+
+/* LeftMenu */
+.trend-skin .left-menu {font-size:16px; line-height:2em; margin-top:5px;}
+.trend-skin .left-menu ul#sortableMenu {
+	margin:20px; padding-left:0; float:right;
+	border-right:none; font-weight:bold; text-align:right;
+}
+.trend-skin .left-menu ul#sortableMenu li {
+	background:transparent; padding:10px; margin:0;
+	width:200px; height:30px; overflow:hidden;
+}
+.trend-skin .left-menu ul#sortableMenu li a {
+	background:#B5DBDC; color:#666; padding:10px;
+	display:inline-block; border-radius:0; min-width:auto;margin:0;
+	height:1.7em; overflow:hidden; line-height:1.4em; float:right;
+	white-space:nowrap;
+}
+.trend-skin .left-menu ul#sortableMenu li.active a {background:#f90; color:#fff;}
+.trend-skin .left-menu ul#sortableMenu li a:hover {
+	padding:10px 10px 10px 100px; 
+ 	-webkit-transition: all 400ms ease-out 0s;  
+    -moz-transition: all 400ms ease-out 0s;  
+    -o-transition: all 400ms ease-out 0s;  
+    -ms-transition: all 400ms ease-out 0s;  
+    transition: all 400ms ease-out 0s;  
+ 	background:#f90; color:#fff;
+}
+.trend-skin .tabs-left > .nav-tabs > li > a, .trend-skin .tabs-left > .nav-tabs > li > a:hover {
+	padding:10px; text-align:right; color:#fff;
+}
+.trend-skin .tabs-left > .nav-tabs .active > a, .trend-skin .tabs-left > .nav-tabs .active > a:hover {
+	font-weight:bold; 
+	border-radius:0;
+	border:none;
+	border-left:3px solid #0074CC;
+	padding:0;
+	color:#0074CC;
+}
+.left-menu ul#sortableMenu li.active a {
+	border:none; padding:10px; margin:0;
+}
+.trend-skin .tabs-left > .nav-tabs li> a:hover {
+ 	padding:0 10px 0 80px;
+ 	-moz-transition:all 400ms ease-out 0s;
+ 	background:#f90;
+ }
+.trend-skin p.mediaLinks {padding:0;}
+.trend-skin .updateTime {margin-top:2em; margin-bottom:0;}
+/*********** Page trend Skin end*/
+

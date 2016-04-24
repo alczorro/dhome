@@ -1,0 +1,4 @@
+<p>您好,${targetUser}
+<p><a href="${currentUserUrl}">${currentUser}</a>在你的主页上留言
+<p>内容：${content}
+<p><a href="${detailUrl}">点击这里查看详情</a>

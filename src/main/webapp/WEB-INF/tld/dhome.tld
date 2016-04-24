@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>2.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>dhome</short-name>
+	<uri>WEB-INF/tld/dhome.tld</uri>
+	<description></description>
+	<tag>
+		<name>LeftMenuLoader</name>
+		<tag-class>net.duckling.dhome.web.tag.LeftMenuLoaderTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>isAdmin</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>domain</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+	<tag>
+		<name>StrFormat</name>
+		<tag-class>net.duckling.dhome.web.tag.StringFormatTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>split</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+	<tag>
+		<name>url</name>
+		<tag-class>net.duckling.dhome.web.tag.UrlFormatTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>img</name>
+		<tag-class>net.duckling.dhome.web.tag.ImageUrlTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>imgId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>imgName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			
+		</attribute>
+	</tag>
+	<tag>
+		<name>imgIdOrName</name>
+		<tag-class>net.duckling.dhome.web.tag.ImageIdOrNameUrlTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>img</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>encode</name>
+		<tag-class>net.duckling.dhome.web.tag.EncodeTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			
+		</attribute>
+	</tag>
+	<tag>
+		<name>key</name>
+		<tag-class>net.duckling.dhome.web.tag.KeyValueTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			
+		</attribute>
+	</tag>
+	<tag>
+		<name>decode</name>
+		<tag-class>net.duckling.dhome.web.tag.DecodeTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			
+		</attribute>
+	</tag>
+	<tag>
+		<name>TopBannerLoader</name>
+		<tag-class>net.duckling.dhome.web.tag.TopBannerLoaderTag</tag-class>
+		<body-content>EMPTY</body-content>
+	</tag>
+	
+	<tag>
+		<name>InitLanuage</name>
+		<tag-class>net.duckling.dhome.web.tag.InitLanuageTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<attribute>
+			<name>useBrowserLanguage</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>AppHomeURL</name>
+		<tag-class>net.duckling.dhome.web.tag.AppHomeURLTag</tag-class>
+		<body-content>EMPTY</body-content>
+	</tag>
+	
+	<tag>
+		<name>IsMainTain</name>
+		<tag-class>net.duckling.dhome.web.tag.IsMainTainTag</tag-class>
+		<attribute>
+			<name>reverse</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>UmtOAuthUrl</name>
+		<tag-class>net.duckling.dhome.web.tag.UmtOAuthUrlTag</tag-class>
+		<body-content>EMPTY</body-content>
+	</tag>
+	<tag>
+		<name>UmtBase</name>
+		<tag-class>net.duckling.dhome.web.tag.UmtBaseUrlTag</tag-class>
+		<body-content>EMPTY</body-content>
+	</tag>
+	<tag>
+		<name>institutionLeftMenuCount</name>
+		<tag-class>net.duckling.dhome.web.tag.InstitutionLeftMenuCountTag</tag-class>
+		<attribute>
+			<name>domain</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>

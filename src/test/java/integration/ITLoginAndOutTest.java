@@ -16,7 +16,10 @@
  * limitations under the License. 
  *
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bacee24b6af98969d9300150162d8fa10cc3383
 package integration;
 import org.junit.After;
 import org.junit.Before;
@@ -38,8 +41,13 @@ public class ITLoginAndOutTest {
 	@Test
 	public void testITLoginAndOut() throws Exception {
 		selenium.open("/people/");
+<<<<<<< HEAD
 		selenium.type("id=inputIcon", "xxxx");
 		selenium.type("name=password", "PASSWORD");
+=======
+		selenium.type("id=inputIcon", "liji@cnic.ac.cn");
+		selenium.type("name=password", "123456");
+>>>>>>> 6bacee24b6af98969d9300150162d8fa10cc3383
 		selenium.click("css=button.btn");
 		selenium.waitForPageToLoad("30000");
 		selenium.click("link=跳过");

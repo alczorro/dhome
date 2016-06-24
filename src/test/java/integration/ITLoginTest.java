@@ -16,7 +16,10 @@
  * limitations under the License. 
  *
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bacee24b6af98969d9300150162d8fa10cc3383
 package integration;
 
 import org.junit.After;
@@ -39,8 +42,13 @@ public class ITLoginTest {
 	//@Test
 	public void testLogin() throws Exception {
 		selenium.open("/dhome/");
+<<<<<<< HEAD
 		selenium.type("id=inputIcon", "xxxx");
 		selenium.type("name=password", "PASSWORD");
+=======
+		selenium.type("id=inputIcon", "some@cnic.cn");
+		selenium.type("name=password", "123456");
+>>>>>>> 6bacee24b6af98969d9300150162d8fa10cc3383
 		selenium.click("css=button.btn");
 		selenium.waitForPageToLoad("30000");
 		selenium.click("link=个人资料");

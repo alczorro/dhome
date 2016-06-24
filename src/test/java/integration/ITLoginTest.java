@@ -16,6 +16,7 @@
  * limitations under the License. 
  *
  */
+
 package integration;
 
 import org.junit.After;
@@ -38,8 +39,8 @@ public class ITLoginTest {
 	//@Test
 	public void testLogin() throws Exception {
 		selenium.open("/dhome/");
-		selenium.type("id=inputIcon", "some@cnic.cn");
-		selenium.type("name=password", "123456");
+		selenium.type("id=inputIcon", "xxxx");
+		selenium.type("name=password", "PASSWORD");
 		selenium.click("css=button.btn");
 		selenium.waitForPageToLoad("30000");
 		selenium.click("link=个人资料");

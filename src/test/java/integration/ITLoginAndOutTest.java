@@ -16,6 +16,7 @@
  * limitations under the License. 
  *
  */
+
 package integration;
 import org.junit.After;
 import org.junit.Before;
@@ -37,8 +38,8 @@ public class ITLoginAndOutTest {
 	@Test
 	public void testITLoginAndOut() throws Exception {
 		selenium.open("/people/");
-		selenium.type("id=inputIcon", "liji@cnic.ac.cn");
-		selenium.type("name=password", "123456");
+		selenium.type("id=inputIcon", "xxxx");
+		selenium.type("name=password", "PASSWORD");
 		selenium.click("css=button.btn");
 		selenium.waitForPageToLoad("30000");
 		selenium.click("link=跳过");
